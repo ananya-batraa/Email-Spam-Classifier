@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Classifier System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Email Spam Classifier</h1>
+        <p class="description">Paste your email content below to classify it as spam or not spam.</p>
+        <form id="prediction-form">
+            <textarea id="email-input" placeholder="Paste your email content here..." required></textarea>
+            <button type="submit">Classify</button>
+        </form>
+        <div id="result" class="result"></div>
+        <div class="format">
+            <h2>Input Format</h2>
+            <p>Make sure to paste the email content in plain text format.</p>
+            <p>Example:</p>
+            <pre>
+Subject: Special Offer Just for You!
+Dear Customer,
+We are excited to offer you a special discount on our premium services. Click the link below to claim your offer now!
+Best regards,
+Your Company
+            </pre>
+            <p>Note: Avoid including any HTML tags or special formatting.</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
